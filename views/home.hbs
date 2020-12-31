@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(223, 203, 203);
+        }
+
+        #main{
+            background-color: rgb(196, 147, 147);
+            margin: auto;
+            padding: auto;
+            width: 60%;
+            text-align: center;
+            border-radius: 5%;
+            overflow: hidden;
+            margin-top: 10%;
+        }
+
+        #link{
+            width: 85%;
+            margin: 5%;
+            font-size: 1.5em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #submit{
+            border: none;
+            color: white;
+            background-color: rgb(110, 110, 219);
+            font-size: 1.5em;
+            margin-top: 5%;
+            width: 100%;
+            cursor: pointer;
+            padding: 2%;
+        }
+
+        #main h1{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Welcome to our YouTube Downloader</h1>
+        <form action="/home" method="POST">
+            <input type="text" name="link" id="link" placeholder="Enter YouTube Video Link..."/>
+            <input type="submit" name="ok" id="submit" value="Submit Your Link"/>
+        </form>
+    </div>
+</body>
+</html>
